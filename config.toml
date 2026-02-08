@@ -1,0 +1,20 @@
+log_level = "INFO"
+
+[universe]
+symbols = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA"]
+default_start = "2020-01-01"
+frequency = "daily"
+
+[storage]
+data_root = "data"
+duckdb_filename = "CXq_data.duckdb"
+
+[alpha_vantage]
+calls_per_minute = 5
+calls_per_day = 25
+
+[yfinance]
+calls_per_minute = 2
+
+[stooq]
+calls_per_minute = 10
